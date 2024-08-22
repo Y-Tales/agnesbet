@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgnesBet - Página Inicial e Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loggedIn = localStorage.getItem('loggedIn');
+            if (loggedIn) {
+                window.location.href = 'luis.html'; // Redireciona para a página de um dos usuários como exemplo
+            }
+        });
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if(username === 'admin' && password === 'taioba') {
+                localStorage.setItem('loggedIn', true);
+                window.location.href = 'admin.html'; // Página de administração se necessário
+            } else if (username === 'luis' && password === '666belferreira') {
+                localStorage.setItem('loggedIn', true);
+                window.location.href = 'luis.html';
+            } else if (username === 'soares' && password === 'C8H10N4O2') {
+                localStorage.setItem('loggedIn', true);
+                window.location.href = 'soares.html';
+            } else if (username === 'vv' && password === 'mendigo') {
+                localStorage.setItem('loggedIn', true);
+                window.location.href = 'vv.html';
+            } else {
+                alert('Credenciais incorretas!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>AgnesBet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Bem-vindo ao AgnesBet!</h2>
+            <p>Junte-se à diversão e aposte no Tales x Agnes! Aqui você pode fazer apostas emocionantes e testar sua sorte. Cada usuário tem um saldo inicial de 10.000 kwanzas e pode apostar em uma variedade de eventos esportivos.</p>
+        </section>
+
+        <section id="loginForm">
+            <h2>Login</h2>
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button onclick="login()">Login</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AgnesBet</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgnesBet - Soares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo, Soares!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="soares.html">Sua Página</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Seu saldo: <span id="saldoSoares"></span> Kwanzas</h2>
+            <h3>Histórico de Apostas</h3>
+            <ul id="historicoSoares">
+                <!-- Histórico de apostas será preenchido dinamicamente -->
+            </ul>
+        </section>
+        <section>
+            <h2>Escolha suas apostas</h2>
+            <div class="aposta">
+                <h3>tipo de sonho do tales com a agnes</h3>
+                <label>
+                    <input type="radio" name="jogo1" value="Time A"> sonho normal
+                </label>
+                <label>
+                    <input type="radio" name="jogo1" value="Time B"> sonho erotico
+                </label>
+                <label>
+                    <input type="radio" name="jogo1" value="Time C"> sonho erotico envolvendo fetiche
+                </label>
+                <label>
+                    <input type="radio" name="jogo1" value="Time D"> sonho acordado
+                </label>
+                <label>
+                    <input type="radio" name="jogo1" value="Time E"> sem sonho com ela (impossivel quando for vai estar pagando muito)
+                </label>
+            </div>
+
+            <div class="aposta">
+                <h3>Número de Vezes de sexo</h3>
+                <input type="range" id="numeroGols" name="numeroGols" min="0" max="100" value="0" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+            </div>
+
+            <div class="aposta">
+                <h3>qual foi o fetiche</h3>
+                <select id="jogadorGol">
+                    <option value="Jogador 1">BDSM</option>
+                    <option value="Jogador 2">FURRY</option>
+                    <option value="Jogador 3">FAMILY</option>
+                    <option value="Jogador 4">ANIME</option>
+                    <option value="Jogador 5">SEXO NORMAL</option>
+                </select>
+            </div>
+
+            <div class="aposta">
+                <h3>Quanto você quer apostar? (em Kwanzas)</h3>
+                <input type="number" id="valorAposta" name="valorAposta" min="1" max="10000" value="1">
+            </div>
+
+            <button id="confirmarAposta">Confirmar Apostas</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AgnesBet</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

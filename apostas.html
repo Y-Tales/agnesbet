@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgnesBet - Apostas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AgnesBet - Apostas</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="apostas.html">Apostas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Escolha suas apostas</h2>
+
+            <div class="aposta">
+                <h3>Jogo 1: Time A vs Time B</h3>
+                <label>
+                    <input type="radio" name="jogo1" value="Time A"> Time A
+                </label>
+                <label>
+                    <input type="radio" name="jogo1" value="Time B"> Time B
+                </label>
+            </div>
+
+            <div class="aposta">
+                <h3>Número de Gols</h3>
+                <input type="range" id="numeroGols" name="numeroGols" min="0" max="100" value="0" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+            </div>
+
+            <div class="aposta">
+                <h3>Quem fez o Gol?</h3>
+                <select id="jogadorGol">
+                    <option value="Jogador 1">Jogador 1</option>
+                    <option value="Jogador 2">Jogador 2</option>
+                    <option value="Jogador 3">Jogador 3</option>
+                    <option value="Jogador 4">Jogador 4</option>
+                    <option value="Jogador 5">Jogador 5</option>
+                </select>
+            </div>
+
+            <div class="aposta">
+                <h3>Quanto você quer apostar? (em Kwanzas)</h3>
+                <input type="number" id="valorAposta" name="valorAposta" min="1" max="10000" value="1">
+            </div>
+
+            <button id="confirmarAposta">Confirmar Apostas</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AgnesBet</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

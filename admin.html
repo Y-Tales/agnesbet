@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgnesBet - Admin</title>
+    
+</head>
+<body>
+    <header>
+        <h1>AgnesBet - Administração</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="apostas.html">Apostas</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Gerenciar Apostas</h2>
+            <div class="aposta">
+                <h3>Adicionar Novo Jogo</h3>
+                <label for="jogo">Nome do Jogo:</label>
+                <input type="text" id="jogo" name="jogo">
+                <label for="timeA">Time A:</label>
+                <input type="text" id="timeA" name="timeA">
+                <label for="timeB">Time B:</label>
+                <input type="text" id="timeB" name="timeB">
+                <button id="adicionarJogo">Adicionar Jogo</button>
+            </div>
+            <h2>Jogos Atuais</h2>
+            <ul id="listaJogos">
+                <!-- Jogos adicionados dinamicamente aparecerão aqui -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        
+        <p>© 2024 AgnesBet</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

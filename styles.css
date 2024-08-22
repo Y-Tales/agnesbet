@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff66b2; /* Rosa vibrante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #ff3399; /* Rosa choque */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #ff3399; /* Rosa choque */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Formulário e inputs */
+.aposta {
+    margin-bottom: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff3399; /* Rosa choque */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff66b2; /* Rosa vibrante */
+}
+
+/* Footer */
+footer {
+    background-color: #ff66b2; /* Rosa vibrante */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
